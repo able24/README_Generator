@@ -40,10 +40,6 @@ The application will be invoked by using the following command:
 node index.js
 
 
-## Picture of application
-
-![Readme file generator overview](https://drive.google.com/file/d/1kYQpf30vYz4qkczfVoMLq6XVIKGx0xjs/view?usp=sharing)
-
 The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for London.
 
 

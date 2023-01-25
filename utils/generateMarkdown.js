@@ -41,7 +41,7 @@ ${data.installation}
 ${data.contributing}
 
 ## Questions
-For questions and enquiries, please email ${data.email}. For more information, visit my github page at https://wwww.github.com/${data.github}
+For questions and enquiries, please email ${data.email}. For more information, visit my github page at https://www.github.com/${data.github}
 
 ## Tests
 ${data.test}

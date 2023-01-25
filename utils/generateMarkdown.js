@@ -1,7 +1,23 @@
-// function to generate markdown for README.   
+// Importing files   
+const licenseBadges = require("./licenseBadges");
+const licenseLinks = require("./licenseLinks");
+
+// Function to add comment and link to chosen license
+function licenseSection(license) {
+  if(license) {
+      return `Licensed under the ${licenseLinks(license)} license`
+  } else {
+      return '';
+  }
+};
+
+
+// Function to generate markdown file
 function generateMarkdown(data) {
   return `
 # ${data.title}
+
+${licenseBadges(data.license)}
 
 ## Table of Content
 - [Project description](#description) 
@@ -31,7 +47,7 @@ For questions and enquiries, please email ${data.email}. For more information, v
 ${data.test}
 
 ## License
-${data.license}
+${licenseSection(data.license)}
 `
 };
 

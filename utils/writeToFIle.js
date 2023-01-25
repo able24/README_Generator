@@ -1,3 +1,4 @@
+// Importing packages and required files
 const inquirer = require("inquirer");
 const fs = require("fs");
 const markDown = require("./generateMarkdown");
@@ -78,4 +79,5 @@ function writeToFile(fileName, data) {
         });
 };
 
+// Making this file accessible to other files
 module.exports = writeToFile;

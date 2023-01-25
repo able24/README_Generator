@@ -1,15 +1,14 @@
-// function to generate markdown for README
-
+// function to generate markdown for README.   
 function generateMarkdown(data) {
   return `
 # ${data.title}
 
 ## Table of Content
-- [Project description](#description)
+- [Project description](#description) 
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Installation](#installation)
-- [Test Instructions](#test instructions)
+- [Test Instructions](#tests)
 - [Questions](#questions)
 - [License](#license)
 
@@ -26,10 +25,9 @@ ${data.installation}
 ${data.contributing}
 
 ## Questions
-${data.email}
-${data.github}
+For questions and enquiries, please email ${data.email}. For more information, visit my github page at https://wwww.github.com/${data.github}
 
-## Test Instructions
+## Tests
 ${data.test}
 
 ## License
@@ -37,4 +35,5 @@ ${data.license}
 `
 };
 
+// Making this file accessible to other files
 module.exports = generateMarkdown;
